@@ -1,0 +1,92 @@
+@mixin respond($breakpoint) {
+  @if ($breakpoint == medium) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == small) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+@mixin font1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+@mixin font2 {
+  font-size: 2rem;
+  text-align: left;
+  color: black;
+}
+
+@mixin fontButton {
+  font-size: 16px;
+  color: white;
+}
+@mixin label1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@mixin title1 {
+  width: auto;
+  height: 28px;
+  margin: 16px 0;
+  font-family: MarkPro;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $darker-blue;
+}
+
+@mixin title2 {
+  height: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $text-grey;
+}
+
+@mixin primaryBtn {
+  @include fontButton();
+  width: auto;
+  height: 36px;
+  border-radius: 4px;
+  border: solid 1px $dark-sky-blue;
+  background-color: $dark-sky-blue;
+}
+
+@mixin line1($color: red) {
+  border: 1px solid $color;
+}
+
+@mixin gradient() {
+  background-image: linear-gradient(200deg, #f2cd48 0%, #fd803f 100%);
+}
+
+@mixin signUpActive {
+  .cont.s--signup & {
+    @content;
+  }
+}
+
+@mixin wrapperContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}

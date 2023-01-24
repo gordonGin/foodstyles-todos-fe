@@ -1,0 +1,35 @@
+.auth {
+  &__container {
+    @include wrapperContainer();
+    width: 390px;
+
+    &.login {
+      height: 471px;
+    }
+
+    &.register {
+      height: 530px;
+    }
+
+
+  }
+
+  &__wrapper {
+    display: flex;
+    background-color: #f6f7f8;
+    flex-direction: column;
+    margin: 40px 30px 30px 60px;
+  }
+
+  &__account-selection {
+    height: 18px;
+    font-family: MarkPro;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
+

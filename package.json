@@ -1,0 +1,59 @@
+{
+  "name": "todos-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.2.3",
+    "eslint": "^8.32.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.2",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2",
+    "web-vitals": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./",
+    "lintFix": "eslint ./ --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "css": "node-sass src/sass/main.scss -o src/dist",
+    "css:watch": "npm run css && node-sass src/sass/main.scss -wo src/dist"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.6.0",
+    "node-sass": "^8.0.0",
+    "prettier": "^2.8.3",
+    "prop-types": "^15.8.1",
+    "redux-devtools-extension": "^2.13.9"
+  }
+}

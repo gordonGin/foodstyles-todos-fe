@@ -1,0 +1,7 @@
+.title {
+  @include title1();
+}
+
+.subtitle {
+  @include title2()
+}
